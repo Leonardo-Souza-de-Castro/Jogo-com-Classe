@@ -14,3 +14,19 @@ C:\Users\dev\Desktop\Exercicio POO\obj\Debug\net5.0\Exercicio POO.dll
 C:\Users\dev\Desktop\Exercicio POO\obj\Debug\net5.0\ref\Exercicio POO.dll
 C:\Users\dev\Desktop\Exercicio POO\obj\Debug\net5.0\Exercicio POO.pdb
 C:\Users\dev\Desktop\Exercicio POO\obj\Debug\net5.0\Exercicio POO.genruntimeconfig.cache
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\Exercicio POO.exe
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\Exercicio POO.deps.json
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\Exercicio POO.runtimeconfig.json
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\Exercicio POO.runtimeconfig.dev.json
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\Exercicio POO.dll
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\ref\Exercicio POO.dll
+C:\Users\dev\Desktop\Jogo-com-Classe\bin\Debug\net5.0\Exercicio POO.pdb
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.csprojAssemblyReference.cache
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.AssemblyInfoInputs.cache
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.AssemblyInfo.cs
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.csproj.CoreCompileInputs.cache
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.dll
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\ref\Exercicio POO.dll
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.pdb
+C:\Users\dev\Desktop\Jogo-com-Classe\obj\Debug\net5.0\Exercicio POO.genruntimeconfig.cache

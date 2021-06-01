@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Desktop\\Exercicio POO\\Exercicio POO.csproj": {}
+    "C:\\Users\\dev\\Desktop\\Jogo-com-Classe\\Exercicio POO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Desktop\\Exercicio POO\\Exercicio POO.csproj": {
+    "C:\\Users\\dev\\Desktop\\Jogo-com-Classe\\Exercicio POO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Desktop\\Exercicio POO\\Exercicio POO.csproj",
+        "projectUniqueName": "C:\\Users\\dev\\Desktop\\Jogo-com-Classe\\Exercicio POO.csproj",
         "projectName": "Exercicio POO",
-        "projectPath": "C:\\Users\\dev\\Desktop\\Exercicio POO\\Exercicio POO.csproj",
+        "projectPath": "C:\\Users\\dev\\Desktop\\Jogo-com-Classe\\Exercicio POO.csproj",
         "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Desktop\\Exercicio POO\\obj\\",
+        "outputPath": "C:\\Users\\dev\\Desktop\\Jogo-com-Classe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

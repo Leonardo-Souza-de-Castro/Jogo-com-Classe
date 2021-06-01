@@ -6,41 +6,14 @@ namespace Exercicio_POO
     {
         static void Main(string[] args)
         {
+            bool repetir = false;
             bool recomecar = false;
             string Escolha_Personagem = "";
             string Escolha_inimigo = "";
 
-            Personagem Personagem_1 = new Personagem();
+            Personagem Player_1 = new Personagem();
 
-            Personagem_1.nome = "Capitão América";
-
-            Personagem_1.idade = 120;
-
-            Personagem_1.armadura = "Escudo";
-
-            Personagem_1.ponto_de_vida = 80;
-
-
-            Personagem Personagem_2 = new Personagem();
-
-            Personagem_2.nome = "Homem Aranha";
-
-            Personagem_2.idade = 16;
-
-            Personagem_2.armadura = "Teia de Aranha";
-
-            Personagem_2.ponto_de_vida = 50;
-
-
-            Personagem Personagem_3 = new Personagem();
-
-            Personagem_3.nome = "Homem de Ferro";
-
-            Personagem_3.idade = 53;
-
-            Personagem_3.armadura = "Mark 1";
-
-            Personagem_3.ponto_de_vida = 75;
+            Personagem Player_2 = new Personagem();
 
             do
             {
@@ -59,12 +32,34 @@ namespace Exercicio_POO
                 switch (Escolha_Personagem)
                 {
                     case "1":
+
+                        Player_1.nome = "Capitão América";
+
+                        Player_1.idade = 120;
+
+                        Player_1.armadura = "Escudo";
+
+                        Player_1.ponto_de_vida = 80;
                         Console.WriteLine("Capitão América Selecionado");
                         break;
                     case "2":
+                        Player_1.nome = "Homem Aranha";
+
+                        Player_1.idade = 16;
+
+                        Player_1.armadura = "Teia de Aranha";
+
+                        Player_1.ponto_de_vida = 50;
                         Console.WriteLine("Homem Aranha Selecionado");
                         break;
                     case "3":
+                        Player_1.nome = "Homem de Ferro";
+
+                        Player_1.idade = 53;
+
+                        Player_1.armadura = "Mark 1";
+
+                        Player_1.ponto_de_vida = 75;
                         Console.WriteLine("Homem de Ferro Selecionado");
                         break;
                     default:
@@ -92,14 +87,35 @@ namespace Exercicio_POO
                 switch (Escolha_inimigo)
                 {
                     case "1":
+                        Player_2.nome = "Capitão América";
+
+                        Player_2.idade = 120;
+
+                        Player_2.armadura = "Escudo";
+
+                        Player_2.ponto_de_vida = 80;
                         Console.WriteLine("Capitão América Selecionado");
                         recomecar = false;
                         break;
                     case "2":
+                        Player_2.nome = "Homem Aranha";
+
+                        Player_2.idade = 16;
+
+                        Player_2.armadura = "Teia de Aranha";
+
+                        Player_2.ponto_de_vida = 50;
                         Console.WriteLine("Homem Aranha Selecionado");
                         recomecar = false;
                         break;
                     case "3":
+                        Player_2.nome = "Homem de Ferro";
+
+                        Player_2.idade = 53;
+
+                        Player_2.armadura = "Mark 1";
+
+                        Player_2.ponto_de_vida = 75;
                         Console.WriteLine("Homem de Ferro Selecionado");
                         recomecar = false;
                         break;
@@ -116,21 +132,66 @@ namespace Exercicio_POO
                 }
             } while (recomecar);
 
-            Console.WriteLine($@"
-=====================================
-|   Selecione o que você quer fazer:|
-|-----------------------------------|
-|    1 - Atacar                     |
-|    2 - Defender                   |
-=====================================
-            ");
-            string acao = Console.ReadLine();
-
-            if (Escolha_Personagem == "1")
+            do
             {
                 
+                Console.WriteLine($@"
+==============================================
+| Player 1 selecione o que você quer fazer:  |
+|--------------------------------------------|
+|    1 - Atacar                              |
+|    2 - Defender                            |
+==============================================
+            ");
+            string resposta_1 = Console.ReadLine();
+                
+                Console.WriteLine($@"
+==============================================
+| Player 2 selecione o que você quer fazer:  |
+|--------------------------------------------|
+|    1 - Atacar                              |
+|    2 - Defender                            |
+==============================================
+            ");
+            string resposta_2 = Console.ReadLine();
+
+            if (resposta_1 == "1" && resposta_2 == "1")
+            {
+                Player_1.ponto_de_vida = Player_1.ponto_de_vida - Player_2.Ataque();
+                Player_2.ponto_de_vida = Player_2.ponto_de_vida - Player_1.Ataque();
+                Console.WriteLine($"Vida do {Player_1.nome}: {Player_1.ponto_de_vida}");
+                Console.WriteLine($"Vida do {Player_2.nome}: {Player_2.ponto_de_vida}");
+                if (Player_1.ponto_de_vida >= 0 || Player_2.ponto_de_vida >= 0)
+                {
+                    repetir = true;
+                }
+            }
+            else if (resposta_1 == "1" && resposta_2 == "2")
+            {
+                Player_2.ponto_de_vida = Player_2.ponto_de_vida - (Player_1.Ataque() - Player_2.Defender());
+                Console.WriteLine($"Vida do {Player_1.nome}: {Player_1.ponto_de_vida}");
+                Console.WriteLine($"Vida do {Player_2.nome}: {Player_2.ponto_de_vida}");
+                if (Player_1.ponto_de_vida >= 0 || Player_2.ponto_de_vida >= 0)
+                {
+                    repetir = true;
+                }
+            }
+            else if (resposta_2 == "1" && resposta_1 == "2")
+            {
+                Player_1.ponto_de_vida = Player_1.ponto_de_vida - (Player_2.Ataque() - Player_1.Defender());
+                Console.WriteLine($"Vida do {Player_1.nome}: {Player_1.ponto_de_vida}");
+                Console.WriteLine($"Vida do {Player_2.nome}: {Player_2.ponto_de_vida}");
+                if (Player_1.ponto_de_vida >= 0 || Player_2.ponto_de_vida >= 0)
+                {
+                    repetir = true;
+                }
+            }
+            else if (resposta_2 == "2" && resposta_1 == "2")
+            {
+                Console.WriteLine("Ambos defenderam ninguem perdeu vida");
             }
 
+            } while (repetir);
         }
     }
 }
